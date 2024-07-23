@@ -4,13 +4,25 @@ class ContactMessagesController < ApplicationController
   end
 
   def create
-    @contact_message = ContactMessage.new
+    Rails.logger.debug("Raw parameters: #{params.inspect}")
+    @contact_message = ContactMessage.new(contact_message_params)
+    Rails.logger.debug("ContactMessage attributes: #{@contact_message.attributes.inspect}")
+
     if @contact_message.save
-      sleep 1
+      UserMailer.success_email(@contact_message).deliver
+      Rails.logger.info("Sent email to: #{@contact_message.email}")
+      sleep 1.5
       flash[:notice] = 'Message sent successfully!'
-      redirect_to hello_emailSend_path
+      redirect_to contact_messages_new_path
     else
-      render 'new'
+      flash[:notice] = "Message is not delivered!"
+      redirect_to contact_messages_new_path
     end
+  end
+
+  private
+
+  def contact_message_params
+    params.require(:contact_message).permit(:name, :email, :subject, :body)
   end
 end

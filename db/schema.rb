@@ -20,11 +20,4 @@ ActiveRecord::Schema[7.1].define(version: 2024_07_18_103736) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "contacts", force: :cascade do |t|
-    t.string "platform"
-    t.string "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
 end

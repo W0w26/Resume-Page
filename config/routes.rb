@@ -3,5 +3,5 @@ Rails.application.routes.draw do
   root 'hello#index'
   get 'hello/about'
   get 'hello/contact'
-  get 'hello/emailSend'
+  get 'contact_messages/new'
 end
