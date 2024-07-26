@@ -6,4 +6,5 @@ class UserMailer < ApplicationMailer
 
     mail(:to => contact_message.email, :subject => contact_message.subject, :body => "Thank you for your email.")
   end
+
 end

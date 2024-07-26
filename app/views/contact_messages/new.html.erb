@@ -7,15 +7,21 @@
     <%= form.text_field :name, id: :contact_message_name %>
   </div>
 
+  <br/>
+
   <div class="field">
     <%= form.label :email %>
     <%= form.email_field :email, id: :contact_message_email %>
   </div>
 
+  <br/>
+
   <div class="field">
     <%= form.label :subject %>
     <%= form.text_field :subject, id: :contact_message_subject %>
   </div>
+
+  <br/>
 
   <div class="field">
     <%= form.label :body %>
@@ -23,6 +29,37 @@
   </div>
 
   <div class="actions">
-    <%= form.submit "Send Message" %>
+    <%= form.submit "Send Message", class: 'custom-link' %>
   </div>
 <% end %>
+
+<hr>
+
+<h2>Messages:</h2>
+
+<br/>
+
+<ul>
+  <% @contact_messages.each do |message| %>
+    <li>
+      <h3><%= message.name %></h3>
+      <p><strong>Email:</strong> <%= message.email %></p>
+      <p><strong>Subject:</strong> <%= message.subject %></p>
+      <p><strong>Body:</strong></p>
+      <p><%= message.body %></p>
+    </li>
+
+      <h><strong>Comments:</strong></h>
+      <br/>
+      <ul>
+      <% message.comment.each do |comment| %>
+          <li><%= comment.body %></li>
+      <% end %>
+      </ul>
+    <br/>
+
+    <%= render partial: 'contact_messages/form', locals: { contact_message: message} %>
+
+    <hr>
+  <% end %>
+</ul>

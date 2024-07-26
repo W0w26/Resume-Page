@@ -48,3 +48,22 @@ body {
 table {
     color: dimgray;
 }
+.custom-link{
+    color: #ffffff;
+    background-color: #404040;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 8px 16px;
+    margin: 3px;
+    border-radius: 3px;
+    display: inline-block;
+}
+.custom-link:hover {
+    background-color: #333333;
+}
+
+.custom-link:active {
+    background-color: #1a1a1a;
+}
