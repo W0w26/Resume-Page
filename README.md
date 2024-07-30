@@ -19,4 +19,6 @@
 ##İletişime Geç Sayfası
 
 -Gerekli yerleri doldurup bana mail atmak için bulunan sayfa.
+-Atılan mailler aşağıda gözüküyo olacaktır.
+-Atılan maillere anonim şekilde yorum yapılabilir.
 
