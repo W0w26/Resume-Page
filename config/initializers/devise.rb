@@ -9,23 +9,7 @@
 # Use this hook to configure devise mailer, warden hooks and so forth.
 # Many of these configuration options can be set straight in your model.
 Devise.setup do |config|
-  # The secret key used by Devise. Devise uses this key to generate
-  # random tokens. Changing this key will render invalid all existing
-  # confirmation, reset password and unlock tokens in the database.
-  # Devise will use the `secret_key_base` as its `secret_key`
-  # by default. You can change it below and use your own secret key.
-  # config.secret_key = '541f444b68106dfda3628110cb887177909f1cf6f3d026812a8c3171fcf50f0d17d7ea56ed7cabc08c54af99ae02b0d221feed16150e6a6d8bc5b795e2152851'
-
-  # ==> Controller configuration
-  # Configure the parent class to the devise controllers.
-  # config.parent_controller = 'DeviseController'
-
-  # ==> Mailer Configuration
-  # Configure the e-mail address which will be shown in Devise::Mailer,
-  # note that it will be overwritten if you use your own mailer class
-  # with default "from" parameter.
-  config.mailer_sender = 'please-change-me-at-config-initializers-devise@example.com'
-
+  config.omniauth :google_oauth2, ENV['google_oauth_client_id'], ENV['google_oauth_client_secret']
   # Configure the class responsible to send e-mails.
   # config.mailer = 'Devise::Mailer'
 
@@ -312,4 +296,6 @@ Devise.setup do |config|
   # config.sign_in_after_change_password = true
   # The default HTTP method used to sign out a resource. Default is :delete.
   config.sign_out_via = :get
+  config.mailer_sender = 'taylan7ozmergen@gmail.com'
+  config.navigational_formats = ['*/*', :html, :turbo_stream]
 end

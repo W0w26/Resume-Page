@@ -4,6 +4,6 @@ class ApplicationMailer < ActionMailer::Base
   def send_email(contact_message)
     @contact_message = contact_message
 
-    mail(:to => contact_message.email, :subject => contact_message.subject, :body => contact_message.body)
+    mail(:to => contact_message.email, :subject => contact_message.subject, :body => contact_message.body) if contact_message.any?
   end
 end
