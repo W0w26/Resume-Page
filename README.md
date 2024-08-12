@@ -1,4 +1,4 @@
-# Todo App with Google oAuth
+# Resume Page with Google oAuth
 
 This is a resume page, using google authentication for login.
 
