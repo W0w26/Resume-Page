@@ -1,24 +1,62 @@
-# README
-To get started with the application, first ensure you have Ruby on Rails(7.1.3.4) and Bundler installed on your system.
+# Todo App with Google oAuth
 
-Clone the repository from GitHub,
-$git clone https://github.com/W0w26/Resume-Page.git
+This is a resume page, using google authentication for login.
 
-navigate to the project directory,
-$cd Desktop/Resume-Page (assuming you cloned the project to desktop)
+These instructions will get you a copy of the project up and running on your local machine.
 
-and run 
-$bundle install
-to install the required gems.
+## Requirements
 
-Set up your Google OAuth credentials by creating `.env` and adding your Google Client ID, Secret, API key, gmail username and app password.
+We will use Ruby on Rails with SQLite for this project so you should have it locally.
+
+## Installing
+
+Following steps will help you to pull project and use it locally.
+
+### 1 - Prerequisites
+```
+Ruby installed on your system (we have talked about up there)
+Bundler gem installed (gem install bundler)
+```
+
+
+### 2 - Clone the repository: 
+```
+git clone https://github.com/W0w26/Resume-Page.git
+```
+
+### 3 - Bundle install the dependencies: 
+* get into directory of project in 
+
+```
+cd path_to_project
+```
+then
+
+```
+bundle install
+```
+
+### 4 - Create a Google Cloud Platform project and enable the Google OAuth API (optional)
+Create the ".env" file. To use the project you have to set your credentials.
+```
+google_oauth_client_id=your_client_id
+google_oauth_client_secret=your_client_secret
 GMAIL_USERNAME=your_gmail
-GMAIL_PASSWORD=your_gmail_app_password
-google_oauth_client_id=your_project_client_id
-google_oauth_client_secret=your_project_client_secret
+GMAIL_PASSWORD=your_app_password
 API_KEY=your_api_key
+```
 
-Migrate the database using
-$rails db:migrate
+### 5 - Create database then run migrations:
+```
+rails db:create
+rails db:migrate
+```
 
-Finally, start the Rails server with `rails s` and open your browser to `http://localhost:3000` to view the application.
+### 6 - Start the application:
+```
+rails s
+```
+
+Now you can see project on your browser;
+<br><br><br>
+Visit localhost:3000
