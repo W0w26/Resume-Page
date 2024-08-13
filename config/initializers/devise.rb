@@ -9,7 +9,12 @@
 # Use this hook to configure devise mailer, warden hooks and so forth.
 # Many of these configuration options can be set straight in your model.
 Devise.setup do |config|
-  config.omniauth :google_oauth2, ENV['google_oauth_client_id'], ENV['google_oauth_client_secret']
+  # config/initializers/devise.rb
+  config.omniauth :google_oauth2, ENV['google_oauth_client_id'], ENV['google_oauth_client_secret'],
+                  scope: 'userinfo.email,userinfo.profile,https://www.googleapis.com/auth/business.manage',
+                  access_type: 'offline',
+                  prompt: 'consent'
+
   # Configure the class responsible to send e-mails.
   # config.mailer = 'Devise::Mailer'
 

@@ -9,6 +9,8 @@ Rails.application.routes.draw do
     resources :contact_messages, only: [:create,:new,:show]
   end
 
+  resources :businesses, only: [:index, :show]
+
   root 'hello#index'
 
   get 'hello/about'

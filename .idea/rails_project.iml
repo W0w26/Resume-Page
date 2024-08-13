@@ -53,6 +53,7 @@
     <orderEntry type="library" scope="PROVIDED" name="crass (v1.0.6, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="date (v3.3.4, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="debug (v1.9.2, RVM: ruby-3.2.2) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="declarative (v0.0.20, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="devise (v4.9.4, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="dotenv (v3.1.2, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="dotenv-rails (v3.1.2, RVM: ruby-3.2.2) [gem]" level="application" />
@@ -60,8 +61,18 @@
     <orderEntry type="library" scope="PROVIDED" name="erubi (v1.13.0, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="faraday (v2.10.0, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="faraday-net_http (v3.1.1, RVM: ruby-3.2.2) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="gems (v1.2.0, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="globalid (v1.2.1, RVM: ruby-3.2.2) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="google-api-client (v0.53.0, RVM: ruby-3.2.2) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="google-apis-core (v0.15.1, RVM: ruby-3.2.2) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="google-apis-discovery_v1 (v0.19.0, RVM: ruby-3.2.2) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="google-apis-generator (v0.15.1, RVM: ruby-3.2.2) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="google-apis-mybusinessaccountmanagement_v1 (v0.25.0, RVM: ruby-3.2.2) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="google-apis-mybusinessbusinessinformation_v1 (v0.21.0, RVM: ruby-3.2.2) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="google-cloud-env (v2.1.1, RVM: ruby-3.2.2) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="googleauth (v1.11.0, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="hashie (v5.0.0, RVM: ruby-3.2.2) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="httpclient (v2.8.3, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="i18n (v1.14.5, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="importmap-rails (v2.0.1, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="io-console (v0.7.2, RVM: ruby-3.2.2) [gem]" level="application" />
@@ -76,6 +87,7 @@
     <orderEntry type="library" scope="PROVIDED" name="mini_mime (v1.1.5, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="minitest (v5.24.1, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="msgpack (v1.7.2, RVM: ruby-3.2.2) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="multi_json (v1.15.0, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="multi_xml (v0.7.1, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mutex_m (v0.2.0, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="net-http (v0.4.1, RVM: ruby-3.2.2) [gem]" level="application" />
@@ -91,6 +103,7 @@
     <orderEntry type="library" scope="PROVIDED" name="omniauth-oauth2 (v1.8.0, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="omniauth-rails_csrf_protection (v1.0.2, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="orm_adapter (v0.5.0, RVM: ruby-3.2.2) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="os (v1.1.4, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="psych (v5.1.2, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="public_suffix (v6.0.0, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="puma (v6.4.2, RVM: ruby-3.2.2) [gem]" level="application" />
@@ -108,10 +121,13 @@
     <orderEntry type="library" scope="PROVIDED" name="rdoc (v6.7.0, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="regexp_parser (v2.9.2, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="reline (v0.5.9, RVM: ruby-3.2.2) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="representable (v3.2.0, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="responders (v3.1.1, RVM: ruby-3.2.2) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="retriable (v3.1.2, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rexml (v3.3.2, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rubyzip (v2.3.2, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="selenium-webdriver (v4.23.0, RVM: ruby-3.2.2) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="signet (v0.19.0, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="snaky_hash (v2.0.1, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sprockets (v4.2.1, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sprockets-rails (v3.5.1, RVM: ruby-3.2.2) [gem]" level="application" />
@@ -121,8 +137,10 @@
     <orderEntry type="library" scope="PROVIDED" name="strscan (v3.1.0, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="thor (v1.3.1, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="timeout (v0.4.1, RVM: ruby-3.2.2) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="trailblazer-option (v0.1.2, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="turbo-rails (v2.0.6, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="tzinfo (v2.0.6, RVM: ruby-3.2.2) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="uber (v0.1.0, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="uri (v0.13.0, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="version_gem (v1.1.4, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="warden (v1.2.9, RVM: ruby-3.2.2) [gem]" level="application" />
@@ -142,11 +160,16 @@
     <option name="generators">
       <list>
         <option value="active_record:application_record" />
+        <option value="active_record:devise" />
         <option value="active_record:multi_db" />
         <option value="application_record" />
         <option value="benchmark" />
         <option value="channel" />
         <option value="controller" />
+        <option value="devise" />
+        <option value="devise:controllers" />
+        <option value="devise:install" />
+        <option value="devise:views" />
         <option value="generator" />
         <option value="helper" />
         <option value="integration_test" />
@@ -156,7 +179,10 @@
         <option value="mailer" />
         <option value="migration" />
         <option value="model" />
+        <option value="mongoid:devise" />
         <option value="resource" />
+        <option value="responders:install" />
+        <option value="responders_controller" />
         <option value="scaffold" />
         <option value="scaffold_controller" />
         <option value="stimulus" />
@@ -172,11 +198,16 @@
     <option name="myGenerators">
       <list>
         <option value="active_record:application_record" />
+        <option value="active_record:devise" />
         <option value="active_record:multi_db" />
         <option value="application_record" />
         <option value="benchmark" />
         <option value="channel" />
         <option value="controller" />
+        <option value="devise" />
+        <option value="devise:controllers" />
+        <option value="devise:install" />
+        <option value="devise:views" />
         <option value="generator" />
         <option value="helper" />
         <option value="integration_test" />
@@ -186,7 +217,10 @@
         <option value="mailer" />
         <option value="migration" />
         <option value="model" />
+        <option value="mongoid:devise" />
         <option value="resource" />
+        <option value="responders:install" />
+        <option value="responders_controller" />
         <option value="scaffold" />
         <option value="scaffold_controller" />
         <option value="stimulus" />

@@ -1,0 +1,17 @@
+<h1>Your Businesses</h1>
+
+<% if flash[:alert] %>
+  <div class="alert alert-danger">
+    <%= flash[:alert] %>
+  </div>
+<% elsif @businesses.empty? %>
+  <div class="alert alert-info">
+    No businesses found.
+  </div>
+<% else %>
+  <ul>
+    <% @businesses.each do |business| %>
+      <li><%= link_to business.business_name, business_path(business.name) %></li>
+    <% end %>
+  </ul>
+<% end %>
