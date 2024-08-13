@@ -60,3 +60,6 @@ rails s
 Now you can see project on your browser;
 <br><br><br>
 Visit localhost:3000
+
+###  Notes:
+In order to use Google Business Apis, your account has to be business account.
