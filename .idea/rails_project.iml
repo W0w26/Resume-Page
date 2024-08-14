@@ -64,6 +64,7 @@
     <orderEntry type="library" scope="PROVIDED" name="gems (v1.2.0, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="globalid (v1.2.1, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="google-api-client (v0.53.0, RVM: ruby-3.2.2) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="google-apis-calendar_v3 (v0.42.0, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="google-apis-core (v0.15.1, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="google-apis-discovery_v1 (v0.19.0, RVM: ruby-3.2.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="google-apis-generator (v0.15.1, RVM: ruby-3.2.2) [gem]" level="application" />

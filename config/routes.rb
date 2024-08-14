@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   end
 
   resources :businesses, only: [:index, :show]
+  resources :google_calendars, only: [:index, :create]
 
   root 'hello#index'
 

@@ -124,6 +124,8 @@ GEM
     google-api-client (0.53.0)
       google-apis-core (~> 0.1)
       google-apis-generator (~> 0.1)
+    google-apis-calendar_v3 (0.42.0)
+      google-apis-core (>= 0.15.0, < 2.a)
     google-apis-core (0.15.1)
       addressable (~> 2.5, >= 2.5.1)
       googleauth (~> 1.9)
@@ -357,6 +359,7 @@ DEPENDENCIES
   devise
   dotenv-rails
   google-api-client
+  google-apis-calendar_v3
   google-apis-mybusinessaccountmanagement_v1
   google-apis-mybusinessbusinessinformation_v1
   importmap-rails

@@ -11,7 +11,7 @@
 Devise.setup do |config|
   # config/initializers/devise.rb
   config.omniauth :google_oauth2, ENV['google_oauth_client_id'], ENV['google_oauth_client_secret'],
-                  scope: 'userinfo.email,userinfo.profile,https://www.googleapis.com/auth/business.manage',
+                  scope: 'userinfo.email,userinfo.profile,https://www.googleapis.com/auth/business.manage,calendar',
                   access_type: 'offline',
                   prompt: 'consent'
 

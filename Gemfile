@@ -59,6 +59,8 @@ gem 'google-apis-mybusinessbusinessinformation_v1'
 
 gem 'google-apis-mybusinessaccountmanagement_v1'
 
+gem 'google-apis-calendar_v3'
+
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 
