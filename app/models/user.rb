@@ -8,7 +8,7 @@ class User < ApplicationRecord
       user.password = Devise.friendly_token[6,10]
       user.google_access_token = auth.credentials.token
       user.google_refresh_token = auth.credentials.refresh_token if auth.credentials.refresh_token.present?
-      user.google_access_token_expiry = Time.at(auth.credentials.expires_at).to_datetime
+      user.google_access_token_expiry = Time.now + 1.hour
       user.save!
       user
     end

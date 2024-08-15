@@ -303,4 +303,5 @@ Devise.setup do |config|
   config.sign_out_via = :get
   config.mailer_sender = 'taylan7ozmergen@gmail.com'
   config.navigational_formats = ['*/*', :html, :turbo_stream]
+  #Rails.application.config.middleware.use SessionTimeout
 end

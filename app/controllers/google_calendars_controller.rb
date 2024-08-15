@@ -27,7 +27,7 @@ class GoogleCalendarsController < ApplicationController
     GoogleCalendarService.new(current_user).create_event(event_details)
     redirect_to google_calendars_path, notice: 'Event was successfully created.'
     else
-      redirect_to google_calendars_path, alert: 'Start time and end time are required to create an event.'
+      redirect_to google_calendars_path, alert: 'Every information is required to create an event.'
     end
   end
 end
