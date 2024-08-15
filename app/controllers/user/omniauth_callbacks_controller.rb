@@ -8,7 +8,7 @@ class User::OmniauthCallbacksController < Devise::OmniauthCallbacksController
       user = User.from_omniauth(auth)
 
       if user.present? && user.persisted?
-        refresh_google_token(user)
+        #refresh_google_token(user)
         sign_out_all_scopes
         flash[:success] = t 'devise.omniauth_callbacks.success', kind: 'Google'
         sign_in_and_redirect user, event: :authentication
