@@ -1,5 +1,4 @@
 require_relative "boot"
-require_relative "../lib/middleware/session_timeout"
 
 require "rails/all"
 
