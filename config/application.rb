@@ -1,4 +1,5 @@
 require_relative "boot"
+require_relative "../lib/middleware/session_timeout"
 
 require "rails/all"
 
@@ -24,5 +25,6 @@ module RailsProject
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
     config.action_controller.default_protect_from_forgery = true
+    config.middleware.use SessionTimeout
   end
 end
