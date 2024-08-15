@@ -5,6 +5,10 @@ class GoogleCalendarsController < ApplicationController
   end
 
   def create
+    start_time = params[:start_time]
+    end_time = params[:end_time]
+
+    if start_time.nil? && end_time.nil?
     event_details = {
       summary: params[:summary],
       location: params[:location],
@@ -22,5 +26,8 @@ class GoogleCalendarsController < ApplicationController
 
     GoogleCalendarService.new(current_user).create_event(event_details)
     redirect_to google_calendars_path, notice: 'Event was successfully created.'
+    else
+      redirect_to google_calendars_path, alert: 'Start time and end time are required to create an event.'
+    end
   end
 end
