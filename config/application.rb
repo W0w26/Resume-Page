@@ -26,5 +26,6 @@ module RailsProject
     # config.eager_load_paths << Rails.root.join("extras")
     config.action_controller.default_protect_from_forgery = true
     config.middleware.use SessionTimeout
+    config.autoload_paths += %W(#{config.root}/lib)
   end
 end
