@@ -12,8 +12,8 @@ class ContactMessagesController < ApplicationController
     @contact_message = ContactMessage.new(contact_message_params)
 
     if @contact_message.save
-      UserMailer.success_email(@contact_message).deliver_now
-      ApplicationMailer.send_email(@contact_message).deliver_now
+      UserMailer.success_email(@contact_message)
+      ApplicationMailer.send_email(@contact_message)
       sleep 1.5
       flash[:notice] = 'Message sent successfully!'
       redirect_to contact_messages_new_path
