@@ -1,4 +1,4 @@
-class SessionTimeout
+class Middleware::SessionTimeout
    def initialize(app)
      @app = app
    end
