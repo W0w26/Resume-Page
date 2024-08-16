@@ -64,7 +64,7 @@ Visit localhost:3000
 ###  Notes:
 *In order to use display businesses, your account has to be business account.
 
-*Also you can visit this url:
+*Also you can visit this url to see the project:
 ```
 https://mysite-7cv7.onrender.com
 ```
